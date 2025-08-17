@@ -1,0 +1,56 @@
+.chats {
+    width: 100%;              /* take full width inside chatWindow */
+    max-width: 700px;         /* but limit maximum width */
+    flex: 1;                  /* fill available vertical space */
+    overflow-y: auto;         /* vertical scrollbar only when needed */
+    overflow-x: hidden;       /* prevent horizontal scrollbar */
+    padding: 1rem;            /* smaller padding for spacing */
+    margin: 0 auto;           /* center horizontally */
+    box-sizing: border-box;   /* ensures padding doesn’t shrink content */
+}
+
+/* User message container */
+.userDiv {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+/* GPT message container */
+.gptDiv {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+/* User bubble */
+.userMessage {
+    background-color: #323232;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 14px 14px 0 14px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+/* GPT bubble */
+.gptDiv > * {
+    background-color: #1f1f1f;
+    color: #e5e5e5;
+    padding: 10px 20px;
+    border-radius: 14px 14px 14px 0;
+    max-width: 70%;
+    word-wrap: break-word;
+    line-height: 1.4;
+}
+
+/* Code block styling */
+.hljs {
+    border-radius: 14px !important;
+}
+
+pre {
+    white-space: pre-wrap;
+}
